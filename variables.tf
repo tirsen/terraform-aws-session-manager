@@ -74,6 +74,12 @@ variable "enable_log_to_cloudwatch" {
   default     = true
 }
 
+variable "linux_shell" {
+  description = "Linux shell preference"
+  type        = string
+  default     = ""
+}
+
 variable "vpc_endpoints_enabled" {
   description = "Create VPC Endpoints"
   type        = bool
